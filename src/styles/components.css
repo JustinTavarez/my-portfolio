@@ -1,0 +1,192 @@
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  background: #1b1f2e;
+}
+
+.nav-link.active {
+  background: #3b82f6;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #3b82f6;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem 1.4rem;
+  border-radius: 0.9rem;
+  border: 1px solid #22252f;
+  background: #080a12;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+  background: #0a0d18;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.card-tech {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Contact Box */
+.contact-box {
+  margin-top: 2rem;
+  padding: 1.8rem 1.6rem;
+  border-radius: 0.9rem;
+  border: 1px solid #22252f;
+  background: #080a12;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+  background: #0a0d18;
+}
+
+.contact-box p {
+  margin: 1rem 0;
+  font-size: 1.05rem;
+}
+
+.contact-box p:first-child {
+  margin-top: 0;
+}
+
+.contact-box p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-box strong {
+  color: #3b82f6;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.contact-link {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.6rem;
+  width: calc(100% - 1.2rem);
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.15);
+  transform: translateX(4px);
+}
+
+.contact-link:hover::after {
+  transform: scaleX(1);
+}
+
+.contact-box .contact-link.email-link:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.contact-box .contact-link.github-link {
+  color: #3b82f6;
+}
+
+.contact-box .contact-link.github-link::after {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.contact-box .contact-link.github-link:hover {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.contact-box .contact-link.linkedin-link {
+  color: #0a66c2;
+}
+
+.contact-box .contact-link.linkedin-link::after {
+  background: linear-gradient(90deg, #0a66c2, #0077b5);
+}
+
+.contact-box .contact-link.linkedin-link:hover {
+  color: #0077b5;
+  background: rgba(10, 102, 194, 0.15);
+}
+
+@media (min-width: 720px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+

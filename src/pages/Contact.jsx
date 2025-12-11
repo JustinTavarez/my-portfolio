@@ -1,25 +1,28 @@
-function Contact() {
+function Contact () {
   return (
-    <section className="page">
-      <h1>Contact</h1>
-      <p>
+    <section className="page contact-page">
+      <h1 className="fade-in-up">Contact Me!</h1>
+      <p className="fade-in-up delay-1">
         Want to talk about an internship, project, or just connect?
       </p>
 
-      <div className="contact-box">
-        <p>
-          <strong>Email:</strong> <a href="mailto:justin@example.com">justin@example.com</a>
-        </p>
-        <p>
-          <strong>GitHub:</strong>{" "}
-          <a href="https://github.com/your-github" target="_blank" rel="noreferrer">
-            github.com/your-github
+      <div className="contact-box fade-in-up delay-2">
+        <p className="fade-in-up delay-3">
+          <strong>Email:</strong>{" "}
+          <a href="mailto:jtavarez.career@gmail.com" className="contact-link email-link">
+            jtavarez.career@gmail.com
           </a>
         </p>
-        <p>
+        <p className="fade-in-up delay-4">
+          <strong>GitHub:</strong>{" "}
+          <a href="https://github.com/justintavarez" target="_blank" rel="noreferrer" className="contact-link github-link">
+            github.com/justintavarez
+          </a>
+        </p>
+        <p className="fade-in-up delay-5">
           <strong>LinkedIn:</strong>{" "}
-          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">
-            linkedin.com/in/your-linkedin
+          <a href="https://www.linkedin.com/in/justin-tavarez-b7068534a/" target="_blank" rel="noreferrer" className="contact-link linkedin-link">
+            linkedin.com/justin-tavarez
           </a>
         </p>
       </div>

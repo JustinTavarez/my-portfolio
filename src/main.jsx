@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import Skills from "./pages/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
-import "./index.css";
+import "./styles/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

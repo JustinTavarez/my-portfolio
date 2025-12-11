@@ -1,0 +1,40 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #22252f;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(5, 6, 10, 0.9);
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.app-main {
+  flex: 1;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.app-footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid #22252f;
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
