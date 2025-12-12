@@ -11,7 +11,7 @@ My Personal site that highlights my current projects, skills, and contact info. 
 ## Tech Stack
 - React 19 with Vite for the development/build toolchain.
 - React Router 7 for nested routing and layout composition.
-- Vanilla CSS (`src/index.css` and `src/App.css`) for styling and layout primitives.
+- Vanilla CSS with modular stylesheets (`src/styles/`) for styling, animations, and layout primitives.
 
 ## Getting Started
 ```bash
@@ -36,12 +36,19 @@ npm run lint
 src/
 ├─ App.jsx          # shared layout (nav + footer) and outlet for each page
 ├─ main.jsx         # React entry point with BrowserRouter routes
+├─ assets/          # image assets (profile photo, background images)
 ├─ pages/
 │  ├─ Home.jsx      # hero text with quick calls to action
 │  ├─ Projects.jsx  # hard-coded project list rendered as cards
 │  ├─ Skills.jsx    # categorized skills grid
 │  └─ Contact.jsx   # email/GitHub/LinkedIn block
-└─ index.css        # global styles (App.css for layout tweaks)
+└─ styles/          # modular CSS stylesheets
+   ├─ index.css     # global styles and imports
+   ├─ variables.css # CSS custom properties (colors, spacing, etc.)
+   ├─ layout.css    # layout primitives (header, footer, containers)
+   ├─ components.css # component-specific styles
+   ├─ pages.css     # page-specific styles
+   └─ animations.css # animations and transitions
 ```
 
 Update the content in the page components as new experience, links, or contact details change. Static data (projects array, skill lists, etc.) lives directly in each component for now, which keeps editing lightweight.
