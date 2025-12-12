@@ -24,7 +24,7 @@ const skills = {
 function Skills() {
   return (
     <section className="page skills-page">
-      <h1 className="fade-in-up">My Skills</h1>
+      <h1 className="fade-in-up">My Skills and Certifications</h1>
       <p className="fade-in-up delay-1">What I'm comfortable working with right now.</p>
 
       <div className="skills-grid">

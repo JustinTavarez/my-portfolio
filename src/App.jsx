@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <div className="logo">Justin Tavarez</div>
+        <div className="logo">Justin Damian Tavarez</div>
         <nav className="nav">
           <NavLink to="/" end className="nav-link">
             Home
