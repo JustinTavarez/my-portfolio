@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Import all styles in order */
 @import './variables.css';
 @import './layout.css';
