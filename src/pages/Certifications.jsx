@@ -12,19 +12,19 @@ const certifications = [
 
 function Certifications() {
   return (
-    <section className="page certifications-page">
-      <div className="certifications-hero">
-        <div className="certifications-content">
-          <h1 className="fade-in-up">My Certifications</h1>
+    <section className="page certifications-page w-full overflow-x-hidden">
+      <div className="certifications-hero flex flex-col w-full gap-6 mt-6 md:flex-row md:gap-8 md:mt-8">
+        <div className="certifications-content flex-1 w-full min-w-0">
+          <h1 className="fade-in-up text-2xl sm:text-3xl md:text-4xl">My Certifications</h1>
           <p className="fade-in-up delay-1">
             Professional certifications I've earned to validate my skills and knowledge.
           </p>
 
-          <div className="certifications-list">
+          <div className="certifications-list flex flex-col gap-4 sm:gap-6 mt-6 sm:mt-8">
             {certifications.map((cert, index) => (
               <article 
                 key={cert.title} 
-                className="certification-card fade-in-up"
+                className="certification-card fade-in-up w-full min-w-0 p-4 sm:p-5 md:p-6"
                 style={{ animationDelay: `${0.4 + (index * 0.2)}s` }}
               >
                 <div className="certification-header">
@@ -45,11 +45,11 @@ function Certifications() {
             ))}
           </div>
         </div>
-        <div className="certifications-badge">
+        <div className="certifications-badge flex-1 w-full min-w-0 flex justify-center items-center">
           <img 
             src={awsBadge} 
             alt="AWS Certified Cloud Practitioner Badge" 
-            className="fade-in-right"
+            className="fade-in-right w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] h-auto rounded-2xl object-contain"
           />
         </div>
       </div>

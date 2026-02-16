@@ -5,3 +5,6 @@
 @import './pages.css';
 @import './animations.css';
 
+/* Tailwind last so its responsive utilities can override where needed */
+@import "tailwindcss";
+
