@@ -27,8 +27,8 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="page projects-page">
-      <h1 className="fade-in-up">My Projects</h1>
+    <section className="page projects-page w-full overflow-x-hidden">
+      <h1 className="fade-in-up text-2xl sm:text-3xl">My Projects</h1>
       <p className="fade-in-up delay-1">Some things I've been building and learning from.</p>
       <p className="fade-in-up delay-2">
         Want to see more? Check out my{" "}
@@ -37,11 +37,11 @@ function Projects() {
         </a>
       </p>
 
-      <div className="card-grid">
+      <div className="card-grid grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mt-6 sm:mt-8">
         {projects.map((project, index) => (
           <article 
             key={project.title} 
-            className="card fade-in-up"
+            className="card fade-in-up w-full min-w-0 p-4 sm:p-5 md:p-6"
             style={{ animationDelay: `${0.4 + (index * 0.1)}s` }}
           >
             <h2>{project.title}</h2>

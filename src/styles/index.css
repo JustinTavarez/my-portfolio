@@ -1,9 +1,10 @@
-@import "tailwindcss";
-
 /* Import all styles in order */
 @import './variables.css';
 @import './layout.css';
 @import './components.css';
 @import './pages.css';
 @import './animations.css';
+
+/* Tailwind last so its responsive utilities can override where needed */
+@import "tailwindcss";
 
