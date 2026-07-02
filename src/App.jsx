@@ -1,10 +1,12 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Link, Outlet, NavLink } from "react-router-dom";
 
 function App() {
   return (
     <div className="app min-h-screen w-full overflow-x-hidden">
       <header className="app-header flex flex-wrap items-center justify-between gap-2 px-4 py-3 sm:px-6 sm:py-4 md:px-8">
-        <div className="logo text-sm sm:text-base truncate max-w-[60%] sm:max-w-none">Justin Damian Tavarez</div>
+        <Link to="/" className="logo text-sm sm:text-base truncate max-w-[60%] sm:max-w-none">
+          Justin Damian Tavarez
+        </Link>
         <nav className="nav flex flex-wrap gap-1 sm:gap-2 md:gap-4 justify-end">
           <NavLink to="/" end className="nav-link max-sm:px-2 max-sm:py-1.5 max-sm:text-xs">
             Home
