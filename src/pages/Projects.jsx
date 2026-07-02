@@ -7,7 +7,8 @@ function Projects() {
       <h1 className="fade-in-up text-2xl sm:text-3xl">My Projects</h1>
       <p className="fade-in-up delay-1">Some things I've been building and learning from.</p>
       <p className="fade-in-up delay-2">
-        Want to see more? Check out my{" "}
+        Want to see more?
+        Click on a project to learn more or visit my{" "}
         <a href="https://github.com/justintavarez" target="_blank" rel="noreferrer" className="github-link">
           Github
         </a>
