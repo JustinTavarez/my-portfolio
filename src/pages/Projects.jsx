@@ -22,7 +22,6 @@ function Projects() {
             style={{ animationDelay: `${0.4 + index * 0.1}s` }}
           >
             <h2>{project.title}</h2>
-            <p className="card-tech">{project.tech}</p>
             <p className="project-card-summary">{project.summary}</p>
             <span className="project-card-cta">Learn more &rarr;</span>
           </Link>
