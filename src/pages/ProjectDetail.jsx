@@ -25,6 +25,9 @@ function ProjectDetail() {
 
   const hasScreenshots = project.screenshots && project.screenshots.length > 0;
   const hasLinks = project.links && (project.links.live || project.links.github);
+  const techList = project.tech
+    ? project.tech.split(",").map((t) => t.trim()).filter(Boolean)
+    : [];
 
   return (
     <section className="page project-detail w-full overflow-x-hidden">
@@ -51,6 +54,35 @@ function ProjectDetail() {
       )}
 
       <p className="project-detail-description fade-in-up delay-2">{project.description}</p>
+
+      <div className="project-info fade-in-up delay-3">
+        {techList.length > 0 && (
+          <div className="project-info-block">
+            <h2 className="project-info-title">Technologies Used</h2>
+            <ul className="project-tech-list">
+              {techList.map((tech) => (
+                <li key={tech} className="project-tech-chip">
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {project.role && (
+          <div className="project-info-block">
+            <h2 className="project-info-title">My Role</h2>
+            <p className="project-info-text">{project.role}</p>
+          </div>
+        )}
+
+        {project.learned && (
+          <div className="project-info-block">
+            <h2 className="project-info-title">What I Learned</h2>
+            <p className="project-info-text">{project.learned}</p>
+          </div>
+        )}
+      </div>
 
       {hasLinks && (
         <div className="project-detail-links fade-in-up delay-3">

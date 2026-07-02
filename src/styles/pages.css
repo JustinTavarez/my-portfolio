@@ -208,6 +208,67 @@
   margin-bottom: 2rem;
 }
 
+/* Info sections: Technologies / My Role / What I Learned */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.project-info-block {
+  padding: 1.4rem 1.4rem;
+  border-radius: 0.9rem;
+  border: 1px solid #22252f;
+  background: #080a12;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.project-info-block:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+  background: #0a0d18;
+}
+
+.project-info-title {
+  color: #3b82f6;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.project-info-text {
+  line-height: 1.8;
+  opacity: 0.92;
+  max-width: 60rem;
+}
+
+.project-tech-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech-chip {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #60a5fa;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-tech-chip:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
 .project-screenshots {
   margin-top: 1rem;
 }
