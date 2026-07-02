@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
+import ProjectDetail from "./pages/ProjectDetail.jsx";
 import Skills from "./pages/Skills.jsx";
 import Certifications from "./pages/Certifications.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="projects/:slug" element={<ProjectDetail />} />
           <Route path="skills" element={<Skills />} />
           <Route path="certifications" element={<Certifications />} />
           <Route path="contact" element={<Contact />} />
