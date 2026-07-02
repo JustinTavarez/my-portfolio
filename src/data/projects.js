@@ -24,7 +24,7 @@ export const projects = [
     learned:
       "How to design a RAG pipeline from scratch, wire ChromaDB vector search to a local LLM through LM Studio, and keep AI responses fast and context-aware. I also learned to translate real syllabus and OpenALG data into a structured, evaluatable format.",
     links: { live: "", github: "" },
-    video: null,
+    video: "",
     screenshots: [],
   },
   {

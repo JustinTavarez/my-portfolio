@@ -1,9 +1,21 @@
+import { useEffect, useRef } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getProject } from "../data/projects.js";
 
 function ProjectDetail() {
   const { slug } = useParams();
   const project = getProject(slug);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = true;
+    const attempt = video.play();
+    if (attempt && typeof attempt.catch === "function") {
+      attempt.catch(() => {});
+    }
+  }, [slug]);
 
   if (!project) {
     return (
@@ -35,12 +47,16 @@ function ProjectDetail() {
         &larr; Back to Projects
       </Link>
 
-      <h1 className="fade-in-up delay-1 text-2xl sm:text-3xl">{project.title}</h1>
-      <p className="project-detail-tech fade-in-up delay-1">{project.tech}</p>
+      <div className="project-detail-header fade-in-up delay-1">
+        <p className="project-detail-kicker">Project Overview</p>
+        <h1 className="project-detail-heading text-2xl sm:text-3xl">{project.title}</h1>
+        <p className="project-detail-description">{project.description}</p>
+      </div>
 
       {project.video && (
         <div className="project-video-wrap fade-in-up delay-2">
           <video
+            ref={videoRef}
             key={project.slug}
             src={project.video}
             autoPlay
@@ -52,8 +68,6 @@ function ProjectDetail() {
           />
         </div>
       )}
-
-      <p className="project-detail-description fade-in-up delay-2">{project.description}</p>
 
       <div className="project-info fade-in-up delay-3">
         {techList.length > 0 && (
