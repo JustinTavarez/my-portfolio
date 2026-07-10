@@ -37,9 +37,7 @@ function ProjectDetail() {
 
   const hasScreenshots = project.screenshots && project.screenshots.length > 0;
   const hasLinks = project.links && (project.links.live || project.links.github);
-  const techList = project.tech
-    ? project.tech.split(",").map((t) => t.trim()).filter(Boolean)
-    : [];
+  const techList = Array.isArray(project.tech) ? project.tech : [];
 
   return (
     <section className="page project-detail w-full overflow-x-hidden">
@@ -75,8 +73,24 @@ function ProjectDetail() {
             <h2 className="project-info-title">Technologies Used</h2>
             <ul className="project-tech-list">
               {techList.map((tech) => (
-                <li key={tech} className="project-tech-chip">
-                  {tech}
+                <li key={tech.name} className="project-tech-item">
+                  <div className="project-tech-item-header">
+                    <span className="project-tech-name">{tech.name}</span>
+                    <span className="project-tech-pct">{tech.pct}%</span>
+                  </div>
+                  <div
+                    className="project-tech-bar"
+                    role="progressbar"
+                    aria-valuenow={tech.pct}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`${tech.name}: ${tech.pct}% of project`}
+                  >
+                    <div
+                      className="project-tech-bar-fill"
+                      style={{ width: `${tech.pct}%` }}
+                    />
+                  </div>
                 </li>
               ))}
             </ul>

@@ -1,20 +1,15 @@
-// Shared project data used by the Projects list page and the ProjectDetail page.
-//
-// To attach media, drop files into src/assets/videos and src/assets/screenshots,
-// import them at the top of this file, and set the `video` / `screenshots` fields.
-// Until then, leave `video` as null and `screenshots` as an empty array, the UI
-// gracefully hides those sections.
-//
-// Example:
-//   import oerVideo from "../assets/videos/oer-ai-agent.mp4";
-//   import oerShot1 from "../assets/screenshots/oer-ai-agent-1.png";
-//   ... then set video: oerVideo, screenshots: [oerShot1]
-
 export const projects = [
   {
     slug: "oer-ai-agent",
     title: "OER AI Agent Website",
-    tech: "React, FastAPI, Python, ChromaDB, LM Studio, RAG",
+    tech: [
+      { name: "React", pct: 35 },
+      { name: "Python", pct: 25 },
+      { name: "FastAPI", pct: 20 },
+      { name: "ChromaDB", pct: 10 },
+      { name: "RAG", pct: 7 },
+      { name: "LM Studio", pct: 3 },
+    ],
     summary:
       "A production-ready RAG tool that helps instructors discover and evaluate Open Educational Resources.",
     description:
@@ -30,7 +25,13 @@ export const projects = [
   {
     slug: "exact-scholars",
     title: "EXACT Scholars Web App",
-    tech: "Angular, Node.js, Express, MongoDB, Selenium",
+    tech: [
+      { name: "Selenium", pct: 30 },
+      { name: "Angular", pct: 25 },
+      { name: "Node.js", pct: 15 },
+      { name: "Express", pct: 15 },
+      { name: "MongoDB", pct: 15 },
+    ],
     summary:
       "Testing lead on an Angular/Node app, building Selenium E2E suites and improving backend workflows.",
     description:
@@ -46,7 +47,11 @@ export const projects = [
   {
     slug: "hotel-data-automation",
     title: "Hotel Data Automation",
-    tech: "Java, Selenium, SQLite",
+    tech: [
+      { name: "Java", pct: 45 },
+      { name: "Selenium", pct: 40 },
+      { name: "SQLite", pct: 15 },
+    ],
     summary:
       "A resilient scraper that collects hotel prices across cities and brands, then surfaces the lowest-price dates.",
     description:
@@ -62,7 +67,11 @@ export const projects = [
   {
     slug: "todo-app",
     title: "TO-DO App",
-    tech: "Vue.js 3, Vite, MVC",
+    tech: [
+      { name: "Vue.js 3", pct: 70 },
+      { name: "MVC", pct: 20 },
+      { name: "Vite", pct: 10 },
+    ],
     summary:
       "A reactive Vue 3 task manager with an MVC structure, validation, and localStorage persistence.",
     description:
@@ -78,7 +87,10 @@ export const projects = [
   {
     slug: "adventure-game",
     title: "Adventure Game",
-    tech: "Java, JavaFX",
+    tech: [
+      { name: "Java", pct: 60 },
+      { name: "JavaFX", pct: 40 },
+    ],
     summary:
       "A Minecraft-style text adventure with branching story paths and a JavaFX stats dashboard.",
     description:
