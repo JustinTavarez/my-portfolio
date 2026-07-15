@@ -11,9 +11,12 @@ export const projects = [
       { name: "LM Studio", pct: 3 },
     ],
     summary:
-      "A production-ready RAG tool that helps instructors discover and evaluate Open Educational Resources.",
+      "Developed an AI-powered assistant that helps university faculty quickly identify and evaluate Open Educational Resources (OER) for their courses.",
     description:
-      "Built a production-ready Retrieval-Augmented Generation (RAG) tool enabling instructors to discover and evaluate Open Educational Resources using real syllabus and OpenALG data, independently researching and applying ChromaDB, LM Studio, and RAG pipeline architecture from scratch. Architected a FastAPI backend integrated with a locally hosted LLM via LM Studio, delivering AI-generated, context-aware responses with low latency. Developed a React frontend with full-text search, structured result display, and a rubric-based evaluation system assessing resource quality, licensing, and accessibility.",
+      "Developed an AI-powered Retrieval-Augmented Generation (RAG) system that helps university faculty discover and evaluate Open Educational Resources (OER) through semantic search and vector embeddings." + 
+      "Built a ChromaDB-based retrieval pipeline to ground large language model responses in verified educational content, improving recommendation accuracy and reducing hallucinations." + 
+      "Implemented prompt engineering techniques to generate licensing verification, quality evaluations, and instructor integration guidance." + 
+      "Designed the system architecture using Python, FastAPI, ChromaDB, embedding models, and large language models, while collaborating with a development team to deliver a client-focused solution for Georgia Gwinnett College.",
     role:
       "Full-stack developer and architect. I designed the RAG pipeline end to end, built the FastAPI backend around a locally hosted LLM, and developed the React frontend for search, results, and rubric-based evaluation.",
     learned:
@@ -35,7 +38,10 @@ export const projects = [
     summary:
       "Testing lead on an Angular/Node app, building Selenium E2E suites and improving backend workflows.",
     description:
-      "I served as the testing lead for an Angular and Node/MongoDB application, building Selenium end-to-end test suites. I wrote installation guides, API docs, Swagger updates, and recurring project reports. I updated backend routes, models, and validation logic to improve admin workflows and data handling. I also contributed UI updates, accessibility fixes, and new frontend features aligned with GGC design.",
+      "I served as the testing lead for an Angular and Node/MongoDB application, building Selenium end-to-end test suites." + 
+      "I wrote installation guides, API docs, Swagger updates, and recurring project reports." + 
+      "I updated backend routes, models, and validation logic to improve admin workflows and data handling." + 
+      "I also contributed UI updates, accessibility fixes, and new frontend features aligned with GGC design.",
     role:
       "Testing lead. I owned the Selenium end-to-end test suites and project documentation while also contributing to backend routes, models, and validation logic, plus frontend UI and accessibility improvements.",
     learned:
@@ -55,7 +61,8 @@ export const projects = [
     summary:
       "A resilient scraper that collects hotel prices across cities and brands, then surfaces the lowest-price dates.",
     description:
-      "I built a scraper that collected hotel prices across five cities and five hotel brands. I analyzed the data to find the ten lowest price dates for each hotel and city across several months. I used DRY patterns, solid error handling, and automation to keep long runs stable. I also wrote automated tests using the AAA structure with JUnit annotations.",
+      "I built a scraper that collected hotel prices across five cities and five hotel brands. I analyzed the data to find the ten lowest price dates for each hotel and city across several months." + 
+      "I used DRY patterns, solid error handling, and automation to keep long runs stable. I also wrote automated tests using the AAA structure with JUnit annotations.",
     role:
       "Sole developer. I designed and built the scraper, the data analysis that ranked lowest-price dates, the SQLite storage layer, and the automated test suite.",
     learned:
@@ -75,7 +82,10 @@ export const projects = [
     summary:
       "A reactive Vue 3 task manager with an MVC structure, validation, and localStorage persistence.",
     description:
-      "I built a Vue 3 task manager using an MVC structure that separates data, UI, and logic. I designed a reactive TaskStore with validation and localStorage persistence. I created reusable components that emit add, complete, and delete events to the controller layer. I wrote controller logic that keeps the model and view in sync. I used the Composition API and Vite for a fast, clean workflow.",
+      "I built a Vue 3 task manager using an MVC structure that separates data, UI, and logic. I designed a reactive TaskStore with validation and localStorage persistence." + 
+      "I created reusable components that emit add, complete, and delete events to the controller layer." + 
+      "I wrote controller logic that keeps the model and view in sync." + 
+      "I used the Composition API and Vite for a fast, clean workflow.",
     role:
       "Sole developer. I architected the MVC structure, built the reactive TaskStore, and created the reusable components and controller logic that keep the model and view in sync.",
     learned:
