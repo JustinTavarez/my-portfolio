@@ -12,11 +12,12 @@ export const projects = [
     ],
     summary:
       "Developed an AI-powered assistant that helps university faculty quickly identify and evaluate Open Educational Resources (OER) for their courses.",
-    description:
-      "Developed an AI-powered Retrieval-Augmented Generation (RAG) system that helps university faculty discover and evaluate Open Educational Resources (OER) through semantic search and vector embeddings." + 
-      "Built a ChromaDB-based retrieval pipeline to ground large language model responses in verified educational content, improving recommendation accuracy and reducing hallucinations." + 
-      "Implemented prompt engineering techniques to generate licensing verification, quality evaluations, and instructor integration guidance." + 
-      "Designed the system architecture using Python, FastAPI, ChromaDB, embedding models, and large language models, while collaborating with a development team to deliver a client-focused solution for Georgia Gwinnett College.",
+    description: [
+      "The OER AI Agent is an AI-powered platform designed to help university faculty discover, evaluate, and adopt Open Educational Resources (OER) as affordable alternatives to traditional textbooks and course materials. Instead of manually searching through multiple repositories, instructors can enter a course or topic and receive relevant educational resources that are matched to their needs using semantic search and Retrieval-Augmented Generation (RAG).",
+      "The application combines large language models with a ChromaDB vector database to search course syllabi and trusted OER repositories for relevant content. Documents are converted into vector embeddings, allowing the system to retrieve information based on meaning rather than exact keywords. Retrieved resources are then used to ground AI responses, producing accurate recommendations that include resource summaries, open license verification, quality evaluations based on an OER rubric, and suggestions for classroom integration.",
+      "The project was developed as part of a client-driven software engineering initiative for Georgia Gwinnett College's AI in Curriculum and Pedagogy Working Group. The goal was to design a reliable AI solution that reduced the time instructors spend searching for educational materials while improving the quality and trustworthiness of AI-generated recommendations.",
+      "Throughout development, the system was refined through testing, prompt engineering, and feedback from stakeholders to create a practical tool that demonstrates modern AI application development using Retrieval-Augmented Generation, vector databases, and large language models.",
+    ],
     role:
       "Full-stack developer and architect. I designed the RAG pipeline end to end, built the FastAPI backend around a locally hosted LLM, and developed the React frontend for search, results, and rubric-based evaluation.",
     learned:
@@ -37,11 +38,10 @@ export const projects = [
     ],
     summary:
       "Testing lead on an Angular/Node app, building Selenium E2E suites and improving backend workflows.",
-    description:
-      "I served as the testing lead for an Angular and Node/MongoDB application, building Selenium end-to-end test suites." + 
-      "I wrote installation guides, API docs, Swagger updates, and recurring project reports." + 
-      "I updated backend routes, models, and validation logic to improve admin workflows and data handling." + 
-      "I also contributed UI updates, accessibility fixes, and new frontend features aligned with GGC design.",
+    description: [
+      "I served as the testing lead for an Angular and Node/MongoDB application, building Selenium end-to-end test suites. I wrote installation guides, API docs, Swagger updates, and recurring project reports.",
+      "I updated backend routes, models, and validation logic to improve admin workflows and data handling. I also contributed UI updates, accessibility fixes, and new frontend features aligned with GGC design.",
+    ],
     role:
       "Testing lead. I owned the Selenium end-to-end test suites and project documentation while also contributing to backend routes, models, and validation logic, plus frontend UI and accessibility improvements.",
     learned:
@@ -60,9 +60,10 @@ export const projects = [
     ],
     summary:
       "A resilient scraper that collects hotel prices across cities and brands, then surfaces the lowest-price dates.",
-    description:
-      "I built a scraper that collected hotel prices across five cities and five hotel brands. I analyzed the data to find the ten lowest price dates for each hotel and city across several months." + 
+    description: [
+      "I built a scraper that collected hotel prices across five cities and five hotel brands. I analyzed the data to find the ten lowest price dates for each hotel and city across several months.",
       "I used DRY patterns, solid error handling, and automation to keep long runs stable. I also wrote automated tests using the AAA structure with JUnit annotations.",
+    ],
     role:
       "Sole developer. I designed and built the scraper, the data analysis that ranked lowest-price dates, the SQLite storage layer, and the automated test suite.",
     learned:
@@ -81,11 +82,10 @@ export const projects = [
     ],
     summary:
       "A reactive Vue 3 task manager with an MVC structure, validation, and localStorage persistence.",
-    description:
-      "I built a Vue 3 task manager using an MVC structure that separates data, UI, and logic. I designed a reactive TaskStore with validation and localStorage persistence." + 
-      "I created reusable components that emit add, complete, and delete events to the controller layer." + 
-      "I wrote controller logic that keeps the model and view in sync." + 
-      "I used the Composition API and Vite for a fast, clean workflow.",
+    description: [
+      "I built a Vue 3 task manager using an MVC structure that separates data, UI, and logic. I designed a reactive TaskStore with validation and localStorage persistence.",
+      "I created reusable components that emit add, complete, and delete events to the controller layer. I wrote controller logic that keeps the model and view in sync. I used the Composition API and Vite for a fast, clean workflow.",
+    ],
     role:
       "Sole developer. I architected the MVC structure, built the reactive TaskStore, and created the reusable components and controller logic that keep the model and view in sync.",
     learned:
@@ -103,8 +103,9 @@ export const projects = [
     ],
     summary:
       "A Minecraft-style text adventure with branching story paths and a JavaFX stats dashboard.",
-    description:
+    description: [
       "I built a Minecraft-style text adventure game in Java with branching story paths driven by player choices. I added a JavaFX dashboard that tracks inventory, progress, and game stats. I followed OOP principles and used an MVC structure across the codebase.",
+    ],
     role:
       "Sole developer. I designed the branching story engine, the player-choice logic, and the JavaFX dashboard for inventory, progress, and stats.",
     learned:

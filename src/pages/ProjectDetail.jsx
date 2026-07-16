@@ -38,6 +38,9 @@ function ProjectDetail() {
   const hasScreenshots = project.screenshots && project.screenshots.length > 0;
   const hasLinks = project.links && (project.links.live || project.links.github);
   const techList = Array.isArray(project.tech) ? project.tech : [];
+  const descriptionParagraphs = Array.isArray(project.description)
+    ? project.description
+    : [project.description];
 
   return (
     <section className="page project-detail w-full overflow-x-hidden">
@@ -48,7 +51,11 @@ function ProjectDetail() {
       <div className="project-detail-header fade-in-up delay-1">
         <p className="project-detail-kicker">Project Overview</p>
         <h1 className="project-detail-heading text-2xl sm:text-3xl">{project.title}</h1>
-        <p className="project-detail-description">{project.description}</p>
+        <div className="project-detail-description">
+          {descriptionParagraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
 
       {project.video && (

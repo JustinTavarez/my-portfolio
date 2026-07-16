@@ -162,8 +162,8 @@
   padding: 1.35rem 1.25rem;
   border-radius: 0.9rem;
   border: 1px solid #22252f;
-  background: linear-gradient(180deg, rgba(13, 13, 14, 0.08), rgba(8, 10, 18, 0.95));
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  background: linear-gradient(180deg, rgba(5, 6, 10, 0.97), rgba(3, 4, 8, 0.99));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 .project-detail-kicker {
@@ -230,6 +230,14 @@
   color: rgba(229, 231, 235, 0.95);
   opacity: 1;
   max-width: 72ch;
+}
+
+.project-detail-description p {
+  margin: 0 0 1.25rem;
+}
+
+.project-detail-description p:last-child {
+  margin-bottom: 0;
 }
 
 .project-detail-links {
