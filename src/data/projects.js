@@ -19,9 +19,12 @@ export const projects = [
       "Throughout development, the system was refined through testing, prompt engineering, and feedback from stakeholders to create a practical tool that demonstrates modern AI application development using Retrieval-Augmented Generation, vector databases, and large language models.",
     ],
     role:
-      "Full-stack developer and architect. I designed the RAG pipeline end to end, built the FastAPI backend around a locally hosted LLM, and developed the React frontend for search, results, and rubric-based evaluation.",
+      "Full-stack developer and architect. I designed the RAG pipeline end to end, while building the FastAPI backend around a locally hosted LLM, and developing the React frontend for search, results, and rubric-based evaluation.",
     learned:
-      "How to design a RAG pipeline from scratch, wire ChromaDB vector search to a local LLM through LM Studio, and keep AI responses fast and context-aware. I also learned to translate real syllabus and OpenALG data into a structured, evaluatable format.",
+      "This project provided hands-on experience building an end-to-end AI application using modern retrieval and language model technologies. " +
+      "It strengthened my understanding of Retrieval-Augmented Generation (RAG), vector databases, semantic search, and prompt engineering, while demonstrating how these components work together to produce accurate, context-aware AI responses. I also gained experience designing backend APIs with FastAPI, organizing and processing data for retrieval, and integrating large language models into a production-style workflow." +
+      "Beyond the technical implementation, the project reinforced the importance of designing AI systems that are reliable, explainable, and grounded in trusted data. Working with real client requirements, testing AI outputs, and refining the application through stakeholder feedback provided valuable experience in software engineering, system design, and collaborative development. " +
+      "The project deepened my understanding of how modern AI applications are built and deployed to solve real-world problems.",
     links: { live: "", github: "" },
     video: "",
     screenshots: [],
