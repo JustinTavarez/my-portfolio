@@ -19,12 +19,12 @@ export const projects = [
       "Throughout development, the system was refined through testing, prompt engineering, and feedback from stakeholders to create a practical tool that demonstrates modern AI application development using Retrieval-Augmented Generation, vector databases, and large language models.",
     ],
     role:
-      "Full-stack developer and architect. I designed the RAG pipeline end to end, while building the FastAPI backend around a locally hosted LLM, and developing the React frontend for search, results, and rubric-based evaluation.",
-    learned:
-      "This project provided hands-on experience building an end-to-end AI application using modern retrieval and language model technologies. " +
-      "It strengthened my understanding of Retrieval-Augmented Generation (RAG), vector databases, semantic search, and prompt engineering, while demonstrating how these components work together to produce accurate, context-aware AI responses. I also gained experience designing backend APIs with FastAPI, organizing and processing data for retrieval, and integrating large language models into a production-style workflow." +
-      "Beyond the technical implementation, the project reinforced the importance of designing AI systems that are reliable, explainable, and grounded in trusted data. Working with real client requirements, testing AI outputs, and refining the application through stakeholder feedback provided valuable experience in software engineering, system design, and collaborative development. " +
-      "The project deepened my understanding of how modern AI applications are built and deployed to solve real-world problems.",
+      "Full-stack developer and architect. I designed the RAG pipeline end to end, built the FastAPI backend around a locally hosted LLM, and developed the React frontend for search, results, and rubric-based evaluation.",
+    learned: [
+      "This project gave me hands-on experience building an end-to-end AI application with modern retrieval and language model technologies. It deepened my understanding of RAG, vector databases, semantic search, and prompt engineering—and how those pieces work together to produce accurate, context-aware responses.",
+      "I also gained experience designing FastAPI backends, preparing data for retrieval, and integrating large language models into a production-style workflow.",
+      "Beyond the technical work, the project reinforced how important it is to design AI systems that are reliable, explainable, and grounded in trusted data. Working from real client requirements, testing AI outputs, and refining the app with stakeholder feedback strengthened my skills in software engineering, system design, and collaboration.",
+    ],
     links: { live: "", github: "" },
     video: "",
     screenshots: [],
@@ -40,37 +40,44 @@ export const projects = [
       { name: "MongoDB", pct: 15 },
     ],
     summary:
-      "Testing lead on an Angular/Node app, building Selenium E2E suites and improving backend workflows.",
+      "EXACT App is a web application developed for Georgia Gwinnett College to support the EXACT(Experiential Learning And Critical Thinking) Plan.",
     description: [
-      "I served as the testing lead for an Angular and Node/MongoDB application, building Selenium end-to-end test suites. I wrote installation guides, API docs, Swagger updates, and recurring project reports.",
-      "I updated backend routes, models, and validation logic to improve admin workflows and data handling. I also contributed UI updates, accessibility fixes, and new frontend features aligned with GGC design.",
+      "The platform serves two primary audiences. Students can learn about the EXACT program and apply to become EXACT Scholars, while administrators can review applications, manage scholars, generate certificates, send decision emails, and maintain semester archives.",
+      "During the Fall 2025 update, the app received a full redesign to match Georgia Gwinnett College's updated branding and improve the overall experience. New work included Protégé Scholar applications, ADA accessibility improvements, automated certificate generation, semester archives with CSV exports, and a refreshed interface inspired by the GGC website.",
+      "The focus was on making the application easier to use, more accessible, and more efficient for both students and administrators.",
     ],
-    role:
-      "Testing lead. I owned the Selenium end-to-end test suites and project documentation while also contributing to backend routes, models, and validation logic, plus frontend UI and accessibility improvements.",
-    learned:
-      "How to build maintainable end-to-end test coverage with Selenium and communicate clearly through installation guides, API docs, and Swagger. I also grew in coordinating a team and aligning frontend work with an established design system.",
+    role: [
+      "I served as Testing Lead, Documentation Lead, and Programmer on the project.",
+      "As Testing Lead, I planned and ran testing throughout development, verified new features, tracked defects, and worked with the team to resolve issues before release. I also helped confirm that accessibility improvements and key user workflows behaved correctly across the app.",
+      "As Documentation Lead, I kept project docs current, recorded feature updates and system changes, and helped the team stay aligned on requirements. Clear documentation made collaboration and long-term maintenance easier.",
+      "As a Programmer, I helped implement new features, fix bugs, and improve overall functionality alongside the team, with a focus on a better experience for students and administrators.",
+    ],
+    learned: [
+      "Working on the EXACT App strengthened both my technical and collaboration skills. Contributing to an existing production app taught me how to learn an established codebase, ship features without breaking what already works, and keep the product consistent.",
+      "I also saw the value of structured testing and thorough documentation. Test plans, verification, and clear change notes reduced defects and made team communication more effective. Along the way, I built a stronger grasp of accessibility, user-centered design, and how admin tools can simplify work through automation—like custom emails, certificates, and data exports.",
+      "Most of all, this project reinforced that shipping polished software takes more than writing code. Planning, testing, documentation, collaboration, and steady refinement were all essential to delivering something reliable for real users.",
+    ],
     links: { live: "", github: "" },
     video: null,
     screenshots: [],
   },
   {
-    slug: "hotel-data-automation",
-    title: "Hotel Data Automation",
+    slug: "nanocraft",
+    title: "NanoCraft",
     tech: [
-      { name: "Java", pct: 45 },
-      { name: "Selenium", pct: 40 },
-      { name: "SQLite", pct: 15 },
+      { name: "Java", pct: 100 },
     ],
     summary:
-      "A resilient scraper that collects hotel prices across cities and brands, then surfaces the lowest-price dates.",
+      "NanoCraft is a 2D RPG game that is inspired by Minecraft and is written entirely in Java..",
     description: [
-      "I built a scraper that collected hotel prices across five cities and five hotel brands. I analyzed the data to find the ten lowest price dates for each hotel and city across several months.",
-      "I used DRY patterns, solid error handling, and automation to keep long runs stable. I also wrote automated tests using the AAA structure with JUnit annotations.",
+      "This project was created to transform core concepts such as exploration, resource gathering, combat, and progression into a 2D, top-down format that everyone can enjoy.",
+      "The game is written entirely in Java and uses the JavaSwing library for the GUI. The game is a single-player game.",
+      "Exploration through different biomes, Combat with different monsters/enemies, Resource gathering, and Progression through the game.  ",
     ],
     role:
-      "Sole developer. I designed and built the scraper, the data analysis that ranked lowest-price dates, the SQLite storage layer, and the automated test suite.",
+      "Sole developer. I designed and built the game from scratch, including the game engine, the GUI, the game logic, and the game mechanics.",
     learned:
-      "How to keep long-running automation stable with solid error handling and DRY design, and how to structure reliable tests using the AAA pattern with JUnit. I also learned to turn raw scraped data into actionable insights.",
+      "How to design and build a 2D RPG game from scratch, including the game engine, the GUI, the game logic, and the game mechanics.",
     links: { live: "", github: "" },
     video: null,
     screenshots: [],

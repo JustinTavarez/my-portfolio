@@ -41,6 +41,16 @@ function ProjectDetail() {
   const descriptionParagraphs = Array.isArray(project.description)
     ? project.description
     : [project.description];
+  const roleParagraphs = Array.isArray(project.role)
+    ? project.role
+    : project.role
+      ? [project.role]
+      : [];
+  const learnedParagraphs = Array.isArray(project.learned)
+    ? project.learned
+    : project.learned
+      ? [project.learned]
+      : [];
 
   return (
     <section className="page project-detail w-full overflow-x-hidden">
@@ -104,17 +114,25 @@ function ProjectDetail() {
           </div>
         )}
 
-        {project.role && (
+        {roleParagraphs.length > 0 && (
           <div className="project-info-block">
             <h2 className="project-info-title">My Role</h2>
-            <p className="project-info-text">{project.role}</p>
+            {roleParagraphs.map((paragraph, index) => (
+              <p key={index} className="project-info-text">
+                {paragraph}
+              </p>
+            ))}
           </div>
         )}
 
-        {project.learned && (
+        {learnedParagraphs.length > 0 && (
           <div className="project-info-block">
             <h2 className="project-info-title">What I Learned</h2>
-            <p className="project-info-text">{project.learned}</p>
+            {learnedParagraphs.map((paragraph, index) => (
+              <p key={index} className="project-info-text">
+                {paragraph}
+              </p>
+            ))}
           </div>
         )}
       </div>
