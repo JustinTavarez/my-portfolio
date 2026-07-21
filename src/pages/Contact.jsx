@@ -67,23 +67,9 @@ function Contact() {
           Let’s connect
         </h1>
         <p className="contact-intro fade-in-up delay-2">
-          Want to talk about an internship, project, or just say hello? Reach out
-          anytime — I’m always open to new opportunities and conversations.
+          Reach out anytime. 
+          I’m always open to new opportunities and conversations!
         </p>
-
-        <div className="contact-cta fade-in-up delay-3">
-          <a href="mailto:jtavarez.career@gmail.com" className="btn">
-            Send me an email
-          </a>
-          <a
-            href="https://www.linkedin.com/in/justin-tavarez-b7068534a/"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-secondary"
-          >
-            View LinkedIn
-          </a>
-        </div>
       </div>
 
       <div className="contact-methods">
