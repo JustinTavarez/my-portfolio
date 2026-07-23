@@ -5,13 +5,32 @@ function Home() {
     <section className="page home w-full overflow-x-hidden">
       <div className="hero flex flex-col w-full gap-6 mt-6 md:flex-row md:gap-8 md:mt-8">
         <div className="hero-text flex-1 w-full min-w-0">
-          <h1 className="fade-in-up text-2xl sm:text-3xl md:text-4xl">Hi, I'm Justin.</h1>
-          <p className="fade-in-up delay-1">
-          I enjoy building applications from the ground up and constantly strive to improve my skills in Java, Git, and software design. Whether it's implementing game mechanics or building out database functionality, I love turning ideas into working code and learning something new along the way. I’m actively looking for internship opportunities where I can contribute to meaningful projects, grow alongside experienced developers, and apply what I’ve learned in the classroom and in personal projects to real-world challenges.
-          </p>
-          <p className="fade-in-up delay-2">
-            Let’s connect and build something awesome!
-          </p>
+          <h1 className="fade-in-up text-2xl sm:text-3xl md:text-4xl">
+            Hello{" "}
+            <span className="wave" role="img" aria-label="waving hand">
+              👋
+            </span>
+            , I'm Justin!
+          </h1>
+          <div className="hero-intro fade-in-up delay-1">
+            <p className="hero-lead">
+              Software developer with a B.S. in Information Technology,
+              concentrating in Software Development. I design and build
+              applications from the ground up,turning ideas into reliable,
+              user-focused software.
+            </p>
+            <p>
+              My experience spans Java apps, full-stack web projects, database
+              design, and team collaboration with Git and Agile workflows. I've
+              shipped everything from educational web apps to AI-powered tools
+              and desktop software.
+            </p>
+            <p>
+              I'm always sharpening my craft and learning new technologies. Take
+              a look at my projects, and feel free to reach out if you'd like to
+              connect.
+            </p>
+          </div>
 
           <div className="home-actions fade-in-up delay-3 flex flex-wrap gap-2 sm:gap-4">
             <a href="/projects" className="btn">

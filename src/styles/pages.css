@@ -36,6 +36,27 @@
   margin-bottom: 1rem;
 }
 
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 42rem;
+}
+
+.hero-intro p {
+  margin: 0;
+  max-width: none;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(247, 247, 247, 0.78);
+}
+
+.hero-intro .hero-lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(247, 247, 247, 0.92);
+}
+
 .hero-photo {
   flex: 1;
   display: flex;
