@@ -35,6 +35,7 @@ import {
   FaBrain,
 } from "react-icons/fa";
 import { TbBrandCSharp, TbBrandVscode } from "react-icons/tb";
+import { Link } from "react-router";
 import useInView from "../hooks/useInView";
 
 const skills = {
@@ -137,12 +138,12 @@ function SkillsCta() {
       ref={ref}
       className={`skills-cta${inView ? " is-visible" : ""} flex flex-wrap gap-2 sm:gap-4`}
     >
-      <a href="/projects" className="btn">
+      <Link to="/projects" className="btn">
         See these skills in action
-      </a>
-      <a href="/contact" className="btn btn-secondary">
+      </Link>
+      <Link to="/contact" className="btn btn-secondary">
         Get in touch
-      </a>
+      </Link>
     </div>
   );
 }
