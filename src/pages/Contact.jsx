@@ -64,7 +64,7 @@ function Contact() {
       <div className="contact-hero">
         <p className="contact-eyebrow fade-in-up">Get in touch</p>
         <h1 className="fade-in-up delay-1 text-2xl sm:text-3xl md:text-4xl">
-          Let’s connect
+          Let’s connect!
         </h1>
         <p className="contact-intro fade-in-up delay-2">
           Reach out anytime. 

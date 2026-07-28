@@ -4,7 +4,7 @@ import { projects } from "../data/projects.js";
 function Projects() {
   return (
     <section className="page projects-page w-full overflow-x-hidden">
-      <h1 className="fade-in-up text-2xl sm:text-3xl">My Projects</h1>
+      <h1 className="fade-in-up text-2xl sm:text-3xl">My Projects!</h1>
       <p className="fade-in-up delay-1">Some things I've been building and learning from.</p>
       <p className="fade-in-up delay-2">
         Want to see more?

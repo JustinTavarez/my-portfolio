@@ -14,13 +14,13 @@ function Home() {
           </h1>
           <div className="hero-intro fade-in-up delay-1">
             <p className="hero-lead">
-              Software developer with a B.S. in Information Technology,
+              An aspiring Software developer with a B.S. in Information Technology,
               concentrating in Software Development. I design and build
               applications from the ground up,turning ideas into reliable,
               user-focused software.
             </p>
             <p>
-              My experience spans Java apps, full-stack web projects, database
+              My experience spans from Java applications, full-stack web projects, database
               design, and team collaboration with Git and Agile workflows. I've
               shipped everything from educational web apps to AI-powered tools
               and desktop software.

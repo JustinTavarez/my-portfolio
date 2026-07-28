@@ -22,7 +22,7 @@ const skills = {
 function Skills() {
   return (
     <section className="page skills-page w-full overflow-x-hidden">
-      <h1 className="fade-in-up text-2xl sm:text-3xl">My Skills</h1>
+      <h1 className="fade-in-up text-2xl sm:text-3xl">My Skills!</h1>
       <p className="fade-in-up delay-1">What I'm comfortable working with right now.</p>
 
       <div className="skills-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8">
