@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import homePhoto from "../assets/Justin_Pic.jpeg";
 
 function Home() {
@@ -33,12 +34,12 @@ function Home() {
           </div>
 
           <div className="home-actions fade-in-up delay-3 flex flex-wrap gap-2 sm:gap-4">
-            <a href="/projects" className="btn">
+            <Link to="/projects" className="btn">
               View my projects
-            </a>
-            <a href="/contact" className="btn btn-secondary">
+            </Link>
+            <Link to="/contact" className="btn btn-secondary">
               Get in touch
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero-photo flex-1 w-full min-w-0 flex justify-center">
