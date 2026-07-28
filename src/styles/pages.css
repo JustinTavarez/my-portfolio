@@ -537,6 +537,25 @@
   opacity: 0;
 }
 
+.skills-category.is-visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Chips stay paused until their section scrolls into view */
+.skills-page .pop-in {
+  animation-play-state: paused;
+}
+
+.skills-page .is-visible .pop-in {
+  animation-play-state: running;
+}
+
+.skills-category-subtitle {
+  margin: -0.35rem 0 1rem;
+  font-size: 0.95rem;
+  color: rgba(247, 247, 247, 0.6);
+}
+
 .skills-category-header {
   display: flex;
   align-items: center;
@@ -626,6 +645,41 @@
   filter: drop-shadow(
     0 0 6px color-mix(in srgb, var(--skill-color) 55%, transparent)
   );
+}
+
+/* Currently Learning chips: quieter, dashed, with a pulsing dot */
+.skill-chip--learning {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--skill-color) 4%, #0a0d16);
+  color: rgba(247, 247, 247, 0.82);
+}
+
+.skill-chip--learning::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--skill-color);
+  flex-shrink: 0;
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+.skill-chip--learning:hover {
+  border-style: solid;
+  color: #ffffff;
+}
+
+/* Bottom call to action */
+.skills-cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+
+.skills-cta.is-visible {
+  animation: fadeInUp 0.8s ease-out 0.15s forwards;
 }
 
 @media (min-width: 720px) {
