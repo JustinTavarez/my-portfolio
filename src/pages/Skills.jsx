@@ -79,7 +79,6 @@ function Skills() {
           >
             <div className="skills-category-header">
               <h2 className="skills-category-title">{category}</h2>
-              <span className="skills-category-count">{items.length}</span>
             </div>
 
             <div className="skills-chips">

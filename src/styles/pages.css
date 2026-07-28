@@ -574,23 +574,6 @@
   opacity: 0.85;
 }
 
-.skills-category-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.75rem;
-  height: 1.5rem;
-  padding: 0 0.55rem;
-  border-radius: 999px;
-  background: rgba(59, 130, 246, 0.14);
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  color: #93c5fd;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  font-variant-numeric: tabular-nums;
-}
-
 .skills-chips {
   display: flex;
   flex-wrap: wrap;
